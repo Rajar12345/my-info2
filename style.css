@@ -1,0 +1,42 @@
+body.center-body {
+    background-color: skyblue; /* Set the background color to sky blue */
+    margin: 0; /* Remove default body margin */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Make the body fill the viewport height */
+  }
+  
+  .container {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow to the container */
+    transition: transform 0.5s; /* Add a transition effect for transform property */
+  }
+  
+  .left-column {
+    flex: 1;
+    padding: 20px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2); /* Add shadow to the left column */
+    transition: transform 0.5s; /* Add a transition effect for transform property */
+  }
+  
+  .right-column.shadow-box {
+    flex: 1;
+    padding: 20px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2); /* Add shadow to the right column */
+    transition: transform 0.5s; /* Add a transition effect for transform property */
+  }
+  
+  .container:hover {
+    transform: translateY(-10px); /* Move the container up on hover */
+  }
+  
+  .left-column:hover {
+    transform: translateY(10px); /* Move the left column down on hover */
+  }
+  
+  .right-column.shadow-box:hover {
+    transform: translateY(10px); /* Move the right column down on hover */
+  }
+  
